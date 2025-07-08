@@ -6,10 +6,10 @@ This document tracks the real-time progress of the project, updated after each d
 
 ## 🚀 Current Development Status
 
--   **🔄 Current Task:** Updating development plan and progress board for Role-Based Access Control.
--   **📍 Current Phase:** Role & Permission Management - Backend.
--   **📈 Overall Progress:** 0% (Calculated based on the ratio of completed tasks to total tasks across all models.)
--   **🕓 Last Updated:** 2025-07-08T12:00:00Z
+-   **🔄 Current Task:** Define User & Profile schemas
+-   **📍 Current Phase:** User, Auth, & Profiles - Backend.
+-   **📈 Overall Progress:** 11.02% (13/118 tasks completed)
+-   **🕓 Last Updated:** 2025-07-08T14:00:00Z
 
 ---
 
@@ -17,9 +17,21 @@ This document tracks the real-time progress of the project, updated after each d
 
 This table provides a granular view of every task across all models and phases, indicating its current status.
  
- | Model                    | Phase       | Task ID      | Task Description                                     | Status     |
+| Model                    | Phase       | Task ID      | Task Description                                     | Status     |
 |--------------------------|-------------|--------------|------------------------------------------------------|------------|
-| User, Auth, & Profiles   | Backend     | UAP-B-01     | Define User & Profile schemas                        | ⏳ TODO    |
+| Frontend Core Setup      | Core        | FCS-C-01     | Add Axios, Redux Toolkit, and API helper             | ✅ DONE    |
+| Reusable UI Components   | Setup & Basic Components | RUC-SBC-01   | Install react-hook-form, yup, @hookform/resolvers    | ✅ DONE    |
+| Reusable UI Components   | Setup & Basic Components | RUC-SBC-02   | Install react-table, react-select                    | ✅ DONE    |
+| Reusable UI Components   | Setup & Basic Components | RUC-SBC-03   | Create base Button component (react/src/components/Button.tsx) | ✅ DONE    |
+| Reusable UI Components   | Setup & Basic Components | RUC-SBC-04   | Create base InputField component (react/src/components/InputField.tsx) | ✅ DONE    |
+| Reusable UI Components   | Setup & Basic Components | RUC-SBC-05   | Create base SelectField component (react/src/components/SelectField.tsx) | ✅ DONE    |
+| Reusable UI Components   | Phase 2: Form & Table Components | RUC-FTC-01   | Create ReusableForm component with react-hook-form and yup integration | ✅ DONE    |
+| Reusable UI Components   | Phase 2: Form & Table Components | RUC-FTC-02   | Create ReusableTable component with react-table integration | ✅ DONE    |
+| Reusable UI Components   | Phase 2: Form & Table Components | RUC-FTC-03   | Create Checkbox component                            | ✅ DONE    |
+| Reusable UI Components   | Phase 2: Form & Table Components | RUC-FTC-04   | Create RadioButton component                         | ✅ DONE    |
+| Reusable UI Components   | Phase 3: Advanced Components & Integration | RUC-ACI-01   | Create DatePicker component                          | ✅ DONE    |
+| Reusable UI Components   | Phase 3: Advanced Components & Integration | RUC-ACI-02   | Create Modal component                               | ✅ DONE    |
+| Reusable UI Components   | Phase 3: Advanced Components & Integration | RUC-ACI-03   | Create Alert/Toast notification component            | ✅ DONE    |
 | User, Auth, & Profiles   | Backend     | UAP-B-02     | Implement registration & JWT login endpoints         | ⏳ TODO    |
 | User, Auth, & Profiles   | Backend     | UAP-B-03     | Implement profile CRUD endpoints                     | ⏳ TODO    |
 | User, Auth, & Profiles   | Frontend    | UAP-F-01     | Create Login & Registration pages                    | ⏳ TODO    |
@@ -27,13 +39,6 @@ This table provides a granular view of every task across all models and phases, 
 | User, Auth, & Profiles   | Frontend    | UAP-F-03     | Implement auth state management                      | ⏳ TODO    |
 | User, Auth, & Profiles   | Integration | UAP-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
 | User, Auth, & Profiles   | Integration | UAP-I-02     | Implement E2E tests for auth flows                   | ⏳ TODO    |
-| Role & Permission Management | Backend     | RPM-B-01     | Define Role & Permission schemas                     | ⏳ TODO    |
-| Role & Permission Management | Backend     | RPM-B-02     | Implement Role CRUD endpoints (Admin only)           | ⏳ TODO    |
-| Role & Permission Management | Backend     | RPM-B-03     | Create middleware/guards for role-based access       | ⏳ TODO    |
-| Role & Permission Management | Frontend    | RPM-F-01     | Create Role management UI (list, add, edit)          | ⏳ TODO    |
-| Role & Permission Management | Frontend    | RPM-F-02     | Implement UI logic to show/hide elements based on user role | ⏳ TODO    |
-| Role & Permission Management | Integration | RPM-I-01     | Connect role management UI to backend                | ⏳ TODO    |
-| Role & Permission Management | Integration | RPM-I-02     | Apply role-based restrictions across all relevant modules | ⏳ TODO    |
 | Staff Management         | Backend     | SM-B-01      | Define Staff schema                                  | ⏳ TODO    |
 | Staff Management         | Backend     | SM-B-02      | Implement Staff CRUD endpoints                       | ⏳ TODO    |
 | Staff Management         | Frontend    | SM-F-01      | Create Staff list view                               | ⏳ TODO    |

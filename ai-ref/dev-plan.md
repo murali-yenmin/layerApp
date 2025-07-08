@@ -5,32 +5,55 @@ This document outlines the complete development plan, breaking the project into 
 ---
 
 ##  Models & Development Order
-1.  **User, Auth, & Profiles** (Secure Login, Profiles Management)
-2.  **Role & Permission Management**
-3.  **Staff Management**
-4.  **Client Management**
-5.  **Advocate Management**
-6.  **Company Management**
-7.  **Case & Matter Management** (Case Management, Add New Matters)
-8.  **Hearing Management**
-9.  **Evidence Handling**
-10. **Document Management**
-11. **Invoice Management**
-12. **Expense Management** (Office Expenses, Add New Expense Types)
-13. **Advice Logging**
-14. **Contact Management**
-15. **Notes Management**
-16. **Tags Management**
-17. **Masters Database**
-18. **Reports**
-19. **Multi-Language Support**
-20. **Dynamic Dashboard**
+1.  **Frontend Core Setup**
+2.  **Reusable UI Components**
+3.  **User, Auth, & Profiles** (Secure Login, Profiles Management)
+4.  **Role & Permission Management**
+5.  **Staff Management**
+6.  **Client Management**
+7.  **Advocate Management**
+8.  **Company Management**
+9.  **Case & Matter Management** (Case Management, Add New Matters)
+10. **Hearing Management**
+11. **Evidence Handling**
+12. **Document Management**
+13. **Invoice Management**
+14. **Expense Management** (Office Expenses, Add New Expense Types)
+15. **Advice Logging**
+16. **Contact Management**
+17. **Notes Management**
+18. **Tags Management**
+19. **Masters Database**
+20. **Reports**
+21. **Multi-Language Support**
+22. **Dynamic Dashboard**
 
 ---
 
 ## Phase-Based Development Plan
 
-### Model 1: User, Auth, & Profiles
+### Model 1: Frontend Core Setup
+- **Phase 1: Core**
+  - [x] ✅ Task: Add Axios, Redux Toolkit, and API helper
+
+### Model 2: Reusable UI Components
+- **Phase 1: Setup & Basic Components**
+  - [ ] ⏳ Task: Install react-hook-form, yup, @hookform/resolvers
+  - [ ] ⏳ Task: Install react-table, react-select
+  - [ ] ⏳ Task: Create base Button component (react/src/components/Button.tsx)
+  - [ ] ⏳ Task: Create base InputField component (react/src/components/InputField.tsx)
+  - [ ] ⏳ Task: Create base SelectField component (react/src/components/SelectField.tsx)
+- **Phase 2: Form & Table Components**
+  - [ ] ⏳ Task: Create ReusableForm component with react-hook-form and yup integration
+  - [ ] ⏳ Task: Create ReusableTable component with react-table integration
+  - [ ] ⏳ Task: Create Checkbox component
+  - [ ] ⏳ Task: Create RadioButton component
+- **Phase 3: Advanced Components & Integration**
+  - [ ] ⏳ Task: Create DatePicker component
+  - [ ] ⏳ Task: Create Modal component
+  - [ ] ⏳ Task: Create Alert/Toast notification component
+
+### Model 3: User, Auth, & Profiles
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define User & Profile schemas
   - [ ] ⏳ Task: Implement registration & JWT login endpoints
@@ -43,7 +66,7 @@ This document outlines the complete development plan, breaking the project into 
   - [ ] ⏳ Task: Connect UI to backend endpoints
   - [ ] ⏳ Task: Implement E2E tests for auth flows
 
-### Model 2: Role & Permission Management
+### Model 3: Role & Permission Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Role & Permission schemas
   - [ ] ⏳ Task: Implement Role CRUD endpoints (Admin only)
@@ -55,7 +78,7 @@ This document outlines the complete development plan, breaking the project into 
   - [ ] ⏳ Task: Connect role management UI to backend
   - [ ] ⏳ Task: Apply role-based restrictions across all relevant modules
 
-### Model 3: Staff Management
+### Model 4: Staff Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Staff schema
   - [ ] ⏳ Task: Implement Staff CRUD endpoints
@@ -65,7 +88,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 4: Client Management
+### Model 5: Client Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Client schema
   - [ ] ⏳ Task: Implement Client CRUD endpoints
@@ -75,7 +98,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 5: Advocate Management
+### Model 6: Advocate Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Advocate schema
   - [ ] ⏳ Task: Implement Advocate CRUD endpoints
@@ -85,7 +108,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 6: Company Management
+### Model 7: Company Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Company schema
   - [ ] ⏳ Task: Implement Company CRUD endpoints
@@ -95,7 +118,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 7: Case & Matter Management
+### Model 8: Case & Matter Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Case/Matter schema with relations
   - [ ] ⏳ Task: Implement Case/Matter CRUD endpoints
@@ -105,7 +128,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 8: Hearing Management
+### Model 9: Hearing Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Hearing schema with relations
   - [ ] ⏳ Task: Implement Hearing CRUD endpoints
@@ -115,7 +138,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 9: Evidence Handling
+### Model 10: Evidence Handling
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Evidence schema with file references
   - [ ] ⏳ Task: Implement Evidence CRUD endpoints
@@ -125,7 +148,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 10: Document Management
+### Model 11: Document Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Document schema with file storage logic
   - [ ] ⏳ Task: Implement Document CRUD endpoints
@@ -135,7 +158,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 11: Invoice Management
+### Model 12: Invoice Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Invoice & LineItem schemas
   - [ ] ⏳ Task: Implement Invoice CRUD and PDF generation
@@ -145,7 +168,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 12: Expense Management
+### Model 13: Expense Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Expense & ExpenseType schemas
   - [ ] ⏳ Task: Implement CRUD endpoints for both
@@ -156,7 +179,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 13: Advice Logging
+### Model 14: Advice Logging
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define AdviceLog schema
   - [ ] ⏳ Task: Implement AdviceLog CRUD endpoints
@@ -166,7 +189,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 14: Contact Management
+### Model 15: Contact Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Contact schema
   - [ ] ⏳ Task: Implement Contact CRUD endpoints
@@ -176,7 +199,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 15: Notes Management
+### Model 16: Notes Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Note schema with polymorphic relations
   - [ ] ⏳ Task: Implement Note CRUD endpoints
@@ -186,7 +209,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 16: Tags Management
+### Model 17: Tags Management
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define Tag schema with polymorphic relations
   - [ ] ⏳ Task: Implement Tag CRUD endpoints
@@ -196,7 +219,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 17: Masters Database
+### Model 18: Masters Database
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Define schemas for all master data (e.g., Court, CaseType)
   - [ ] ⏳ Task: Implement CRUD endpoints for all masters
@@ -205,7 +228,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 18: Reports
+### Model 19: Reports
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Implement data aggregation pipelines for various reports
   - [ ] ⏳ Task: Create report-generation endpoints
@@ -215,7 +238,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Connect UI to backend endpoints
 
-### Model 19: Multi-Language Support
+### Model 20: Multi-Language Support
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Set up i18n library and language packs
 - **Phase 2: Frontend**
@@ -224,7 +247,7 @@ This document outlines the complete development plan, breaking the project into 
 - **Phase 3: Integration**
   - [ ] ⏳ Task: Ensure language preference is stored and respected
 
-### Model 20: Dynamic Dashboard
+### Model 21: Dynamic Dashboard
 - **Phase 1: Backend**
   - [ ] ⏳ Task: Create endpoints to serve aggregated data for widgets
 - **Phase 2: Frontend**
