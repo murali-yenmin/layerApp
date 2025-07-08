@@ -6,8 +6,8 @@ This document tracks the real-time progress of the project, updated after each d
 
 ## 🚀 Current Development Status
 
--   **🔄 Current Task:** Understanding project context and structure.
--   **📍 Current Phase:** User, Auth, & Profiles - Backend.
+-   **🔄 Current Task:** Updating development plan and progress board for Role-Based Access Control.
+-   **📍 Current Phase:** Role & Permission Management - Backend.
 -   **📈 Overall Progress:** 0% (Calculated based on the ratio of completed tasks to total tasks across all models.)
 -   **🕓 Last Updated:** 2025-07-08T12:00:00Z
 
@@ -16,8 +16,8 @@ This document tracks the real-time progress of the project, updated after each d
 ## ✅ Detailed Task Status
 
 This table provides a granular view of every task across all models and phases, indicating its current status.
-
-| Model                    | Phase       | Task ID      | Task Description                                     | Status     |
+ 
+ | Model                    | Phase       | Task ID      | Task Description                                     | Status     |
 |--------------------------|-------------|--------------|------------------------------------------------------|------------|
 | User, Auth, & Profiles   | Backend     | UAP-B-01     | Define User & Profile schemas                        | ⏳ TODO    |
 | User, Auth, & Profiles   | Backend     | UAP-B-02     | Implement registration & JWT login endpoints         | ⏳ TODO    |
@@ -27,6 +27,13 @@ This table provides a granular view of every task across all models and phases, 
 | User, Auth, & Profiles   | Frontend    | UAP-F-03     | Implement auth state management                      | ⏳ TODO    |
 | User, Auth, & Profiles   | Integration | UAP-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
 | User, Auth, & Profiles   | Integration | UAP-I-02     | Implement E2E tests for auth flows                   | ⏳ TODO    |
+| Role & Permission Management | Backend     | RPM-B-01     | Define Role & Permission schemas                     | ⏳ TODO    |
+| Role & Permission Management | Backend     | RPM-B-02     | Implement Role CRUD endpoints (Admin only)           | ⏳ TODO    |
+| Role & Permission Management | Backend     | RPM-B-03     | Create middleware/guards for role-based access       | ⏳ TODO    |
+| Role & Permission Management | Frontend    | RPM-F-01     | Create Role management UI (list, add, edit)          | ⏳ TODO    |
+| Role & Permission Management | Frontend    | RPM-F-02     | Implement UI logic to show/hide elements based on user role | ⏳ TODO    |
+| Role & Permission Management | Integration | RPM-I-01     | Connect role management UI to backend                | ⏳ TODO    |
+| Role & Permission Management | Integration | RPM-I-02     | Apply role-based restrictions across all relevant modules | ⏳ TODO    |
 | Staff Management         | Backend     | SM-B-01      | Define Staff schema                                  | ⏳ TODO    |
 | Staff Management         | Backend     | SM-B-02      | Implement Staff CRUD endpoints                       | ⏳ TODO    |
 | Staff Management         | Frontend    | SM-F-01      | Create Staff list view                               | ⏳ TODO    |
@@ -116,73 +123,7 @@ This table provides a granular view of every task across all models and phases, 
 | Dynamic Dashboard        | Frontend    | DD-F-02      | Create individual dashboard widgets                  | ⏳ TODO    |
 | Dynamic Dashboard        | Integration | DD-I-01      | Connect dashboard widgets to backend endpoints       | ⏳ TODO    |
 
-
-## ❗ Phase Completion Status
-
-This table tracks the overall status of each development phase for every model.
-
-| Model                   | Phase       | Status     |
-|-------------------------|-------------|------------|
-| User, Auth, & Profiles  | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Staff Management        | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Client Management       | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Advocate Management     | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Company Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Case & Matter Mgmt      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Hearing Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Evidence Handling       | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Document Management     | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Invoice Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Expense Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Advice Logging          | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Contact Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Notes Management        | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Tags Management         | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Masters Database        | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Reports                 | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Multi-Language Support  | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Dynamic Dashboard       | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-
---- 
-
+ 
 ## ❌ Error Tracker
 
 This section logs any encountered errors during development, providing context and resolution status.

@@ -125,6 +125,115 @@ Develop and manage these features:
 - Status tracking and progress logging
 - UI matched strictly to provided designs
 
+
+
+---
+
+## 🛡️ Role-Based Access Control (RBAC)
+
+Define and enforce **role-specific access** to features, screens, and actions.
+
+---
+
+### 🔐 ROLE: Admin
+
+#### ✅ Permissions:
+
+* Full access to all modules and system settings
+* Create/edit/delete users, roles, and permissions
+* Assign advocates to cases
+* Access complete financial and operational data
+
+#### 🎯 Responsibilities:
+
+* Configure system, ensure security
+* Manage all roles (Admin, Manager, Advocate, Staff)
+* Oversee operations, compliance, and backups
+
+#### 🖥️ Key Screens:
+
+* System Dashboard
+* User & Role Management
+* Masters Management (Courts, Categories, etc.)
+* All Case Modules
+* Reports, Invoices, Documents
+* Settings
+
+---
+
+### 👔 ROLE: Manager
+
+#### ✅ Permissions:
+
+* Manage advocates and staff
+* Assign cases
+* Review hearing schedules and reports
+* Moderate client onboarding and evidence/docs
+
+#### 🎯 Responsibilities:
+
+* Supervise team allocations
+* Track case progress and resource usage
+* Support document reviews and billing
+
+#### 🖥️ Key Screens:
+
+* Team Dashboard
+* Advocate & Staff Directory
+* Client & Case Management
+* Hearing Calendar
+* Documents & Invoices
+* Team Reports
+
+---
+
+### ⚖️ ROLE: Advocate
+
+#### ✅ Permissions:
+
+* Access & manage assigned cases
+* Add hearings, evidence, notes, and documents
+* Generate own case invoices
+* Edit personal profile
+
+#### 🎯 Responsibilities:
+
+* Handle assigned legal matters
+* Keep hearing schedules updated
+* Communicate with clients
+* Maintain personal productivity records
+
+#### 🖥️ Key Screens:
+
+* Personal Dashboard
+* Case Detail/Edit
+* Hearing Manager
+* Evidence, Notes, Invoices
+* Profile Settings
+
+---
+
+### 👨‍💼 ROLE: Staff
+
+#### ✅ Permissions:
+
+* View only assigned cases
+* Upload documents, notes, evidence
+* View contacts and client data
+
+#### 🎯 Responsibilities:
+
+* Assist advocate with case prep
+* Maintain documents and deadlines
+* Input hearing and contact data
+
+#### 🖥️ Key Screens:
+
+* Upcoming Tasks Dashboard
+* Assigned Cases View
+* Document/Evidence Upload
+* Notes & Contact Log
+
 ---
 
 This prompt enforces a **disciplined, trackable, UI-aligned development cycle**. All engineers must adhere to this structure—no shortcuts, no missing logs, and no off-design implementations.
