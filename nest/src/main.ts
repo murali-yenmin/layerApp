@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors(); // Enable CORS for all origins
 
   const port = process.env.PORT ?? 3000;
 

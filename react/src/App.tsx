@@ -1,18 +1,13 @@
 import React from 'react';
-import './App.scss';
-import Greeting from './Greeting';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello from React with TypeScript and Webpack!
-        </p>
-        <Greeting name="Gemini" />
-      </header>
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
-}
+};
 
 export default App;

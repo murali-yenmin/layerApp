@@ -1,15 +1,14 @@
 # 📊 Advocate Office Management System – Full Progress Board
 
 This document tracks the real-time progress of the project, updated after each development phase.
-
+ 
 ---
-
 ## 🚀 Current Development Status
 
--   **🔄 Current Task:** Define User & Profile schemas
--   **📍 Current Phase:** User, Auth, & Profiles - Backend.
--   **📈 Overall Progress:** 11.02% (13/118 tasks completed)
--   **🕓 Last Updated:** 2025-07-08T14:00:00Z
+-   **🔄 Current Task:** Implement Layout with Header and Sidebar
+-   **📍 Current Phase:** Frontend Core Setup
+-   **📈 Overall Progress:** 11.02% (13/118 tasks completed) - *Recalculation needed for accurate percentage*
+-   **🕓 Last Updated:** 2025-07-09T12:00:00Z
 
 ---
 
@@ -20,6 +19,7 @@ This table provides a granular view of every task across all models and phases, 
 | Model                    | Phase       | Task ID      | Task Description                                     | Status     |
 |--------------------------|-------------|--------------|------------------------------------------------------|------------|
 | Frontend Core Setup      | Core        | FCS-C-01     | Add Axios, Redux Toolkit, and API helper             | ✅ DONE    |
+| Frontend Core Setup      | Core        | FCS-C-02     | Implement Layout with Header and Sidebar             | ✅ DONE    |
 | Reusable UI Components   | Setup & Basic Components | RUC-SBC-01   | Install react-hook-form, yup, @hookform/resolvers    | ✅ DONE    |
 | Reusable UI Components   | Setup & Basic Components | RUC-SBC-02   | Install react-table, react-select                    | ✅ DONE    |
 | Reusable UI Components   | Setup & Basic Components | RUC-SBC-03   | Create base Button component (react/src/components/Button.tsx) | ✅ DONE    |
@@ -32,13 +32,13 @@ This table provides a granular view of every task across all models and phases, 
 | Reusable UI Components   | Phase 3: Advanced Components & Integration | RUC-ACI-01   | Create DatePicker component                          | ✅ DONE    |
 | Reusable UI Components   | Phase 3: Advanced Components & Integration | RUC-ACI-02   | Create Modal component                               | ✅ DONE    |
 | Reusable UI Components   | Phase 3: Advanced Components & Integration | RUC-ACI-03   | Create Alert/Toast notification component            | ✅ DONE    |
-| User, Auth, & Profiles   | Backend     | UAP-B-02     | Implement registration & JWT login endpoints         | ⏳ TODO    |
-| User, Auth, & Profiles   | Backend     | UAP-B-03     | Implement profile CRUD endpoints                     | ⏳ TODO    |
-| User, Auth, & Profiles   | Frontend    | UAP-F-01     | Create Login & Registration pages                    | ⏳ TODO    |
-| User, Auth, & Profiles   | Frontend    | UAP-F-02     | Create Profile view & edit pages                     | ⏳ TODO    |
-| User, Auth, & Profiles   | Frontend    | UAP-F-03     | Implement auth state management                      | ⏳ TODO    |
-| User, Auth, & Profiles   | Integration | UAP-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
-| User, Auth, & Profiles   | Integration | UAP-I-02     | Implement E2E tests for auth flows                   | ⏳ TODO    |
+| User, Auth, & Profiles   | Backend     | UAP-B-02     | Implement registration & JWT login endpoints         | ✅ DONE    |
+| User, Auth, & Profiles   | Backend     | UAP-B-03     | Implement profile CRUD endpoints                     | ✅ DONE    |
+| User, Auth, & Profiles   | Frontend    | UAP-F-01     | Create Login & Registration pages                    | ✅ DONE    |
+| User, Auth, & Profiles   | Frontend    | UAP-F-02     | Create Profile view & edit pages                     | ✅ DONE    |
+| User, Auth, & Profiles   | Frontend    | UAP-F-03     | Implement auth state management                      | ✅ DONE    |
+| User, Auth, & Profiles   | Integration | UAP-I-01     | Connect UI to backend endpoints                      | ✅ DONE    |
+| User, Auth, & Profiles   | Integration | UAP-I-02     | Implement E2E tests for auth flows                   | ✅ DONE    |
 | Staff Management         | Backend     | SM-B-01      | Define Staff schema                                  | ⏳ TODO    |
 | Staff Management         | Backend     | SM-B-02      | Implement Staff CRUD endpoints                       | ⏳ TODO    |
 | Staff Management         | Frontend    | SM-F-01      | Create Staff list view                               | ⏳ TODO    |
@@ -122,7 +122,7 @@ This table provides a granular view of every task across all models and phases, 
 | Multi-Language Support   | Backend     | MLS-B-01     | Set up i18n library and language packs               | ⏳ TODO    |
 | Multi-Language Support   | Frontend    | MLS-F-01     | Integrate i18n library (e.g., react-i18next)         | ⏳ TODO    |
 | Multi-Language Support   | Frontend    | MLS-F-02     | Create language switcher component                   | ⏳ TODO    |
-| Multi-Language Support   | Integration | MLS-I-01     | Ensure language preference is stored and respected   | ⏳ TODO    |
+| Multi-Language Support   | Integration | MLS-I-01      | Ensure language preference is stored and respected   | ⏳ TODO    |
 | Dynamic Dashboard        | Backend     | DD-B-01      | Create endpoints to serve aggregated data for widgets| ⏳ TODO    |
 | Dynamic Dashboard        | Frontend    | DD-F-01      | Design and build dashboard grid layout               | ⏳ TODO    |
 | Dynamic Dashboard        | Frontend    | DD-F-02      | Create individual dashboard widgets                  | ⏳ TODO    |

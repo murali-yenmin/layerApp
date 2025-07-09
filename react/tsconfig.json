@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
+    "target": "es6",                       // Upgrade from ES5 to ES6 for JSX compatibility
+    "module": "esnext",
+    "lib": ["dom", "esnext"],              // Broader support for modern JS/DOM APIs
+    "jsx": "react-jsx",                    // Required for React 17+ JSX transform
+    "outDir": "./dist",
+    "rootDir": "./src",                    // Recommended for project structure
+    "strict": true,                        // Optional: for better type safety
     "moduleResolution": "node",
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "skipLibCheck": true,                  // Avoid type errors in node_modules
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

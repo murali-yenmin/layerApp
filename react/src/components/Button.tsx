@@ -13,21 +13,23 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyle = 'font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline';
-  const variantStyles = {
-    primary: 'bg-blue-500 hover:bg-blue-700 text-white',
-    secondary: 'bg-gray-300 hover:bg-gray-400 text-gray-800',
-    danger: 'bg-red-500 hover:bg-red-700 text-white',
+  const baseClasses = "inline-block border-none rounded font-medium uppercase no-underline cursor-pointer outline-none transition-shadow duration-200 ease-in-out shadow-md hover:shadow-lg active:shadow-xl";
+
+  const variantClasses = {
+    primary: "bg-purple-600 text-white",
+    secondary: "bg-teal-500 text-white",
+    danger: "bg-red-700 text-white",
   };
-  const sizeStyles = {
-    small: 'text-sm',
-    medium: 'text-base',
-    large: 'text-lg',
+
+  const sizeClasses = {
+    small: "px-3 h-8 leading-8 text-sm",
+    medium: "px-4 h-9 leading-9 text-base",
+    large: "px-6 h-11 leading-11 text-lg",
   };
 
   return (
     <button
-      className={`${baseStyle} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
       {...props}
     >
       {children}

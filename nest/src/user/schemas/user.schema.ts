@@ -5,6 +5,8 @@ export type UserDocument = User & Document;
 
 @Schema()
 export class User {
+  _id: string; // Added for TypeScript to recognize the _id property from Mongoose
+
   @Prop({ required: true, unique: true })
   username: string;
 
@@ -12,13 +14,13 @@ export class User {
   email: string;
 
   @Prop({ required: true })
-  password: string;
+  passwordHash: string;
 
-  @Prop({ default: Date.now })
-  createdAt: Date;
+  @Prop()
+  passwordResetToken?: string;
 
-  @Prop({ default: Date.now })
-  updatedAt: Date;
+  @Prop()
+  passwordResetExpires?: Date;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
