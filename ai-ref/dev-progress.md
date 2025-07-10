@@ -1,192 +1,408 @@
-# 📊 Advocate Office Management System – Full Progress Board
+# LawVerge Development Progress
 
-This document tracks the real-time progress of the project, updated after each development phase.
-
----
-
-## 🚀 Current Development Status
-
--   **🔄 Current Task:** Understanding project context and structure.
--   **📍 Current Phase:** User, Auth, & Profiles - Backend.
--   **📈 Overall Progress:** 0% (Calculated based on the ratio of completed tasks to total tasks across all models.)
--   **🕓 Last Updated:** 2025-07-08T12:00:00Z
+This document tracks the real-time progress of the LawVerge application development. It is updated after the completion of each phase.
 
 ---
 
-## ✅ Detailed Task Status
+### 📈 **Overall Progress**  
 
-This table provides a granular view of every task across all models and phases, indicating its current status.
+| 🔢 Metric                  | 📍 Value     |
+|---------------------------|----------------|
+| Total Modules             | 22             |
+| Modules Completed         | 0              |
+| Total Tasks               | ~130+          |
+| Tasks Completed           | 0              |
+| **Overall Completion**    | **0%**         |
 
-| Model                    | Phase       | Task ID      | Task Description                                     | Status     |
-|--------------------------|-------------|--------------|------------------------------------------------------|------------|
-| User, Auth, & Profiles   | Backend     | UAP-B-01     | Define User & Profile schemas                        | ⏳ TODO    |
-| User, Auth, & Profiles   | Backend     | UAP-B-02     | Implement registration & JWT login endpoints         | ⏳ TODO    |
-| User, Auth, & Profiles   | Backend     | UAP-B-03     | Implement profile CRUD endpoints                     | ⏳ TODO    |
-| User, Auth, & Profiles   | Frontend    | UAP-F-01     | Create Login & Registration pages                    | ⏳ TODO    |
-| User, Auth, & Profiles   | Frontend    | UAP-F-02     | Create Profile view & edit pages                     | ⏳ TODO    |
-| User, Auth, & Profiles   | Frontend    | UAP-F-03     | Implement auth state management                      | ⏳ TODO    |
-| User, Auth, & Profiles   | Integration | UAP-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
-| User, Auth, & Profiles   | Integration | UAP-I-02     | Implement E2E tests for auth flows                   | ⏳ TODO    |
-| Staff Management         | Backend     | SM-B-01      | Define Staff schema                                  | ⏳ TODO    |
-| Staff Management         | Backend     | SM-B-02      | Implement Staff CRUD endpoints                       | ⏳ TODO    |
-| Staff Management         | Frontend    | SM-F-01      | Create Staff list view                               | ⏳ TODO    |
-| Staff Management         | Frontend    | SM-F-02      | Create Add/Edit Staff forms                          | ⏳ TODO    |
-| Staff Management         | Integration | SM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Client Management        | Backend     | CM-B-01      | Define Client schema                                 | ⏳ TODO    |
-| Client Management        | Backend     | CM-B-02      | Implement Client CRUD endpoints                      | ⏳ TODO    |
-| Client Management        | Frontend    | CM-F-01      | Create Client list view                              | ⏳ TODO    |
-| Client Management        | Frontend    | CM-F-02      | Create Add/Edit Client forms                         | ⏳ TODO    |
-| Client Management        | Integration | CM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Advocate Management      | Backend     | AM-B-01      | Define Advocate schema                               | ⏳ TODO    |
-| Advocate Management      | Backend     | AM-B-02      | Implement Advocate CRUD endpoints                    | ⏳ TODO    |
-| Advocate Management      | Frontend    | AM-F-01      | Create Advocate list view                            | ⏳ TODO    |
-| Advocate Management      | Frontend    | AM-F-02      | Create Add/Edit Advocate forms                       | ⏳ TODO    |
-| Advocate Management      | Integration | AM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Company Management       | Backend     | CoM-B-01     | Define Company schema                                | ⏳ TODO    |
-| Company Management       | Backend     | CoM-B-02     | Implement Company CRUD endpoints                     | ⏳ TODO    |
-| Company Management       | Frontend    | CoM-F-01     | Create Company list view                             | ⏳ TODO    |
-| Company Management       | Frontend    | CoM-F-02     | Create Add/Edit Company forms                        | ⏳ TODO    |
-| Company Management       | Integration | CoM-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Case & Matter Management | Backend     | CMM-B-01     | Define Case/Matter schema with relations             | ⏳ TODO    |
-| Case & Matter Management | Backend     | CMM-B-02     | Implement Case/Matter CRUD endpoints                 | ⏳ TODO    |
-| Case & Matter Management | Frontend    | CMM-F-01     | Create Case/Matter list view                         | ⏳ TODO    |
-| Case & Matter Management | Frontend    | CMM-F-02     | Create Add/Edit Case/Matter forms                    | ⏳ TODO    |
-| Case & Matter Management | Integration | CMM-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Hearing Management       | Backend     | HM-B-01      | Define Hearing schema with relations                 | ⏳ TODO    |
-| Hearing Management       | Backend     | HM-B-02      | Implement Hearing CRUD endpoints                     | ⏳ TODO    |
-| Hearing Management       | Frontend    | HM-F-01      | Create Hearing list/calendar view                    | ⏳ TODO    |
-| Hearing Management       | Frontend    | HM-F-02      | Create Add/Edit Hearing forms                        | ⏳ TODO    |
-| Hearing Management       | Integration | HM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Evidence Handling        | Backend     | EH-B-01      | Define Evidence schema with file references          | ⏳ TODO    |
-| Evidence Handling        | Backend     | EH-B-02      | Implement Evidence CRUD endpoints                    | ⏳ TODO    |
-| Evidence Handling        | Frontend    | EH-F-01      | Create Evidence list view for cases                  | ⏳ TODO    |
-| Evidence Handling        | Frontend    | EH-F-02      | Create Evidence upload/edit forms                    | ⏳ TODO    |
-| Evidence Handling        | Integration | EH-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Document Management      | Backend     | DM-B-01      | Define Document schema with file storage logic       | ⏳ TODO    |
-| Document Management      | Backend     | DM-B-02      | Implement Document CRUD endpoints                    | ⏳ TODO    |
-| Document Management      | Frontend    | DM-F-01      | Create Document repository view                      | ⏳ TODO    |
-| Document Management      | Frontend    | DM-F-02      | Create Document upload/management forms              | ⏳ TODO    |
-| Document Management      | Integration | DM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Invoice Management       | Backend     | IM-B-01      | Define Invoice & LineItem schemas                    | ⏳ TODO    |
-| Invoice Management       | Backend     | IM-B-02      | Implement Invoice CRUD and PDF generation            | ⏳ TODO    |
-| Invoice Management       | Frontend    | IM-F-01      | Create Invoice list view                             | ⏳ TODO    |
-| Invoice Management       | Frontend    | IM-F-02      | Create Invoice creation/editing form                 | ⏳ TODO    |
-| Invoice Management       | Integration | IM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Expense Management       | Backend     | EM-B-01      | Define Expense & ExpenseType schemas                 | ⏳ TODO    |
-| Expense Management       | Backend     | EM-B-02      | Implement CRUD endpoints for both                    | ⏳ TODO    |
-| Expense Management       | Frontend    | EM-F-01      | Create Expense list view                             | ⏳ TODO    |
-| Expense Management       | Frontend    | EM-F-02      | Create Add/Edit Expense forms                        | ⏳ TODO    |
-| Expense Management       | Frontend    | EM-F-03      | Create ExpenseType management UI                     | ⏳ TODO    |
-| Expense Management       | Integration | EM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Advice Logging           | Backend     | AL-B-01      | Define AdviceLog schema                              | ⏳ TODO    |
-| Advice Logging           | Backend     | AL-B-02      | Implement AdviceLog CRUD endpoints                   | ⏳ TODO    |
-| Advice Logging           | Frontend    | AL-F-01      | Create AdviceLog list view                           | ⏳ TODO    |
-| Advice Logging           | Frontend    | AL-F-02      | Create Add/Edit AdviceLog forms                      | ⏳ TODO    |
-| Advice Logging           | Integration | AL-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Contact Management       | Backend     | CtM-B-01     | Define Contact schema                                | ⏳ TODO    |
-| Contact Management       | Backend     | CtM-B-02     | Implement Contact CRUD endpoints                     | ⏳ TODO    |
-| Contact Management       | Frontend    | CtM-F-01     | Create Contact list view                             | ⏳ TODO    |
-| Contact Management       | Frontend    | CtM-F-02     | Create Add/Edit Contact forms                        | ⏳ TODO    |
-| Contact Management       | Integration | CtM-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Notes Management         | Backend     | NM-B-01      | Define Note schema with polymorphic relations        | ⏳ TODO    |
-| Notes Management         | Backend     | NM-B-02      | Implement Note CRUD endpoints                        | ⏳ TODO    |
-| Notes Management         | Frontend    | NM-F-01      | Create Notes view component for related items        | ⏳ TODO    |
-| Notes Management         | Frontend    | NM-F-02      | Create Add/Edit Note forms                           | ⏳ TODO    |
-| Notes Management         | Integration | NM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Tags Management          | Backend     | TM-B-01      | Define Tag schema with polymorphic relations         | ⏳ TODO    |
-| Tags Management          | Backend     | TM-B-02      | Implement Tag CRUD endpoints                         | ⏳ TODO    |
-| Tags Management          | Frontend    | TM-F-01      | Create Tag management UI                             | ⏳ TODO    |
-| Tags Management          | Frontend    | TM-F-02      | Create component to add/remove tags on items         | ⏳ TODO    |
-| Tags Management          | Integration | TM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Masters Database         | Backend     | MD-B-01      | Define schemas for all master data (e.g., Court, CaseType) | ⏳ TODO |
-| Masters Database         | Backend     | MD-B-02      | Implement CRUD endpoints for all masters             | ⏳ TODO    |
-| Masters Database         | Frontend    | MD-F-01      | Create a unified Master data management interface    | ⏳ TODO    |
-| Masters Database         | Integration | MD-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Reports                  | Backend     | R-B-01       | Implement data aggregation pipelines for various reports | ⏳ TODO |
-| Reports                  | Backend     | R-B-02       | Create report-generation endpoints                   | ⏳ TODO    |
-| Reports                  | Frontend    | R-F-01       | Create a report selection/filter UI                  | ⏳ TODO    |
-| Reports                  | Frontend    | R-F-02       | Create components to display report data             | ⏳ TODO    |
-| Reports                  | Integration | R-I-01       | Connect UI to backend endpoints                      | ⏳ TODO    |
-| Multi-Language Support   | Backend     | MLS-B-01     | Set up i18n library and language packs               | ⏳ TODO    |
-| Multi-Language Support   | Frontend    | MLS-F-01     | Integrate i18n library (e.g., react-i18next)         | ⏳ TODO    |
-| Multi-Language Support   | Frontend    | MLS-F-02     | Create language switcher component                   | ⏳ TODO    |
-| Multi-Language Support   | Integration | MLS-I-01     | Ensure language preference is stored and respected   | ⏳ TODO    |
-| Dynamic Dashboard        | Backend     | DD-B-01      | Create endpoints to serve aggregated data for widgets| ⏳ TODO    |
-| Dynamic Dashboard        | Frontend    | DD-F-01      | Design and build dashboard grid layout               | ⏳ TODO    |
-| Dynamic Dashboard        | Frontend    | DD-F-02      | Create individual dashboard widgets                  | ⏳ TODO    |
-| Dynamic Dashboard        | Integration | DD-I-01      | Connect dashboard widgets to backend endpoints       | ⏳ TODO    |
+---
+
+### 🔄 **Current Task** 
+
+| 🔧 Item     | 📌 Value        |
+|------------|----------------|
+| Module     | Not Started    |
+| Phase      | Not Started    |
+| Task       | Not Started    |
 
 
-## ❗ Phase Completion Status
+---
 
-This table tracks the overall status of each development phase for every model.
+### 🕓 **Last Updated**
 
-| Model                   | Phase       | Status     |
-|-------------------------|-------------|------------|
-| User, Auth, & Profiles  | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Staff Management        | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Client Management       | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Advocate Management     | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Company Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Case & Matter Mgmt      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Hearing Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Evidence Handling       | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Document Management     | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Invoice Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Expense Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Advice Logging          | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Contact Management      | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Notes Management        | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Tags Management         | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Masters Database        | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Reports                 | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Multi-Language Support  | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
-| Dynamic Dashboard       | Backend     | ⏳ TODO    |
-|                         | Frontend    | ⏳ TODO    |
-|                         | Integration | ⏳ TODO    |
+YYYY-MM-DD HH:MM:SS
 
---- 
+---
 
-## ❌ Error Tracker
+## 📋 **Module Progress**
 
-This section logs any encountered errors during development, providing context and resolution status.
+**Legend:** ⏳ (TODO) | 🚧 (In Progress) | ✅ (Completed) | ❌ (Error)
 
-| Model | Phase | Task | Error Description | Status |
-|-------|-------|------|-------------------|--------|
-| –     | –     | –    | No errors logged yet | ✅ No issues |
+---
+
+### 1. 🔐 **Secure Login**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase                                   | ✅ Task                                                                 | 📌 Status      | 📝 Notes / Errors |
+|-------------------------------------------|---------------------------------------------------------------------------|:--------------:|-------------------|
+| **Phase 1: Scoping & Data Modeling**      | Define User entity and authentication requirements                        | ⏳ TODO        | -                 |
+|                                           | Design JWT structure and token refresh strategy                           | ⏳ TODO        | -                 |
+|                                           | Outline password policies and hashing mechanism                           | ⏳ TODO        | -                 |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement User entity and database schema                              | ⏳ TODO        | -                 |
+|                                           | Create authentication controller and service                              | ⏳ TODO        | -                 |
+|                                           | Implement JWT generation and validation logic                             | ⏳ TODO        | -                 |
+|                                           | Add password hashing (e.g., bcrypt)                                       | ⏳ TODO        | -                 |
+| **Phase 3: Frontend (React) – UI Development** | Build Login form component                                           | ⏳ TODO        | -                 |
+|                                           | Create UI for password reset/forgot password flow                         | ⏳ TODO        | -                 |
+|                                           | Implement UI state management (loading, error, success)                   | ⏳ TODO        | -                 |
+| **Phase 4: Integration & Validation**     | Connect Login UI to the authentication API                                | ⏳ TODO        | -                 |
+|                                           | Implement client-side validation (`react-hook-form` + `yup/zod`)          | ⏳ TODO        | -                 |
+|                                           | Handle and display API error messages                                     | ⏳ TODO        | -                 |
+| **Phase 5: Role-Based Access Control (RBAC)** | Implement `AuthGuard` to protect routes                               | ⏳ TODO        | -                 |
+|                                           | Create a `RolesGuard` to manage permissions                               | ⏳ TODO        | -                 |
+|                                           | Redirect users based on their role after login                            | ⏳ TODO        | -                 |
+| **Phase 6: Testing & Finalization**       | Write unit tests for authentication service                               | ⏳ TODO        | -                 |
+|                                           | Write UI tests for the Login form                                         | ⏳ TODO        | -                 |
+|                                           | Perform E2E testing for the complete login flow                           | ⏳ TODO        | -                 |
+
+
+---
+
+### 2. 👤 **Profiles Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define user profile attributes beyond the core User entity (e.g., bio, profile picture URL, contact details) | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement API endpoints for users to view and update their own profiles | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build a "My Profile" or "Account Settings" page | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect the profile page UI to the backend API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure users can only edit their own profile | ⏳ TODO | - |
+| | Define if Admins can edit other users' profiles | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for profile update functionality | ⏳ TODO | - |
+
+---
+
+### 3. 🗃️ **Masters Database**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define all master data entities (e.g., Court, Case Type, Document Type, Expense Type) | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement generic or specific CRUD APIs for each master table | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build a dedicated "System Settings" or "Masters" area in the UI | ⏳ TODO | - |
+| | Create forms and tables for managing each master data type | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the various Master CRUD APIs | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Restrict access to this entire module to Admin users only | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for master data creation and validation | ⏳ TODO | - |
+
+---
+
+### 4. 💸 **Add New Expense Types**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define ExpenseType entity (this is a master table) | ⏳ TODO | - |
+| | Attributes: name, description | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement ExpenseType entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for managing expense types within the Masters/Settings area | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the ExpenseType CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Restrict access to Admin and Manager roles | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for managing expense types | ⏳ TODO | - |
+
+---
+
+### 5. 🧑‍💼 **Staff Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Staff entity (related to User) | ⏳ TODO | - |
+| | Outline attributes: personal details, role, permissions, etc. | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Staff entity and CRUD API endpoints (Create, Read, Update, Delete) | ⏳ TODO | - |
+| | Add logic for inviting/onboarding new staff members | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build a table/list view to display all staff | ⏳ TODO | - |
+| | Create forms for adding and editing staff members | ⏳ TODO | - |
+| | Design a modal for confirming deletions | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Staff CRUD API | ⏳ TODO | - |
+| | Implement client-side validation for staff forms | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Restrict access to Admin and Manager roles | ⏳ TODO | - |
+| | Prevent lower-level roles from modifying or viewing sensitive staff data | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write unit tests for the Staff service | ⏳ TODO | - |
+| | Perform E2E testing for the staff management workflow | ⏳ TODO | - |
+
+---
+
+### 6. 👨‍⚖️ **Advocate Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Advocate entity (related to User) | ⏳ TODO | - |
+| | Attributes: specialization, bar association number, etc. | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Advocate entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for listing, adding, and editing advocates | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Advocate CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Restrict access to Admin and Manager roles | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for advocate management logic | ⏳ TODO | - |
+
+---
+
+### 7. 🏢 **Company Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Company entity (related to Client) | ⏳ TODO | - |
+| | Attributes: name, address, registration details | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Company entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for managing company profiles | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Company CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Define permissions for who can add or edit company information | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for company management | ⏳ TODO | - |
+
+---
+
+### 8. 👤 **Client Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Client entity and its relationships (e.g., to Cases) | ⏳ TODO | - |
+| | Specify client attributes: contact info, company, etc. | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Client entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for listing, adding, and editing clients | ⏳ TODO | - |
+| | Create a client profile view | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Client CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure advocates/staff can only view clients associated with their cases | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for client creation and modification logic | ⏳ TODO | - |
+
+---
+
+### 9. 📂 **Case Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Case entity and its relationships (Client, Advocate, Hearings, etc.) | ⏳ TODO | - |
+| | Attributes: case number, status, description | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Case entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for listing, creating, and editing cases | ⏳ TODO | - |
+| | Design a detailed case view page | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Case CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Implement logic to assign cases to advocates/staff | ⏳ TODO | - |
+| | Restrict case visibility based on user assignment | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for case creation and assignment | ⏳ TODO | - |
+
+---
+
+### 10. 📌 **Add New Matters**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define the minimum required fields for a "quick add" matter/case | ⏳ TODO | - |
+| | This module will leverage the existing Case entity | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Create a simplified API endpoint for creating a case with minimal data | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Design and build a "quick add" modal or dedicated form | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect the quick add UI to the simplified API endpoint | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Define which roles (e.g., Manager, Advocate) can use this feature | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for the quick add workflow | ⏳ TODO | - |
+
+---
+
+### 11. 📅 **Hearing Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Hearing entity (related to Case) | ⏳ TODO | - |
+| | Attributes: date, court, judge, outcome | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Hearing entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI to schedule and view hearings within a case | ⏳ TODO | - |
+| | Create a calendar view for all hearings | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Hearing CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure only assigned users can manage hearings for a case | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for hearing scheduling | ⏳ TODO | - |
+
+---
+
+### 12. 🧾 **Evidence Handling**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Evidence entity (related to Case) | ⏳ TODO | - |
+| | Attributes: file path, description, type, upload date | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Evidence entity and CRUD API, including file upload logic | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for uploading and listing evidence for a case | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Evidence API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure only assigned users can manage evidence | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for evidence upload and retrieval | ⏳ TODO | - |
+
+---
+
+### 13. 📁 **Document Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Document entity (related to Case) | ⏳ TODO | - |
+| | Attributes: file path, document type, version history, description | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Document entity and CRUD API | ⏳ TODO | - |
+| | Integrate with a file storage solution (e.g., local, S3) | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for uploading, listing, and organizing documents within a case | ⏳ TODO | - |
+| | Create a document viewer/previewer component | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Document API, including file upload handling | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure document access is restricted based on case assignment | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for document upload, download, and access control | ⏳ TODO | - |
+
+---
+
+### 14. 🧾 **Advice Logging**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Advice entity (related to Client, Advocate) | ⏳ TODO | - |
+| | Attributes: advice text, date, category | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Advice entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for logging and viewing advice history for a client | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Advice CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure only relevant advocates/staff can view or add advice | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for advice logging | ⏳ TODO | - |
+
+---
+
+### 15. 🗒️ **Notes Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Note entity (related to Case, Client, etc.) | ⏳ TODO | - |
+| | Attributes: content, author, timestamp | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Note entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for adding, editing, and viewing notes within relevant contexts (e.g., a case timeline) | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Note CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure notes are only visible to users with access to the parent item (e.g., the case) | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for note creation and visibility | ⏳ TODO | - |
+
+---
+
+### 16. 🏷️ **Tags Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Tag entity (e.g., name, color) | ⏳ TODO | - |
+| | Plan for a polymorphic relationship to tag various items (Cases, Documents, etc.) | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Tag entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for creating and managing tags | ⏳ TODO | - |
+| | Create a reusable component for applying tags to items | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Integrate the tagging component into other modules (Cases, Documents) | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Define permissions for who can create and manage tags | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for tag creation and application | ⏳ TODO | - |
+
+---
+
+### 17. 💵 **Invoice Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Invoice entity (related to Case, Client) | ⏳ TODO | - |
+| | Attributes: line items, total amount, due date, status (draft, sent, paid) | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Invoice entity and CRUD API | ⏳ TODO | - |
+| | Add logic for auto-generating invoice numbers | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for creating, viewing, and filtering invoices | ⏳ TODO | - |
+| | Design an invoice template for viewing and printing/PDF generation | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Invoice CRUD API | ⏳ TODO | - |
+| | Implement validation for invoice forms | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Restrict invoice creation/management to Admins, Managers, and assigned Advocates | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for invoice generation and status updates | ⏳ TODO | - |
+
+---
+
+### 18. 💰 **Office Expenses**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Expense entity | ⏳ TODO | - |
+| | Attributes: expense type, amount, date, description, receipt attachment | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Expense entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build UI for logging, viewing, and categorizing office expenses | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Expense CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-based Access Control (RBAC)** | Restrict access to Admin and Manager roles | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for expense tracking and reporting | ⏳ TODO | - |
+
+---
+
+### 19. 📇 **Contact Management**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define Contact entity | ⏳ TODO | - |
+| | Attributes: name, email, phone, company, relationship (e.g., witness, opposing counsel) | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement Contact entity and CRUD API | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build a central contact directory with search and filter capabilities | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect UI to the Contact CRUD API | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Define permissions for viewing or managing contacts | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests for contact creation and search functionality | ⏳ TODO | - |
+
+---
+
+### 20. 📈 **Reports**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define requirements for key reports (e.g., financial summaries, case load reports) | ⏳ TODO | - |
+| | Design the data aggregation strategies | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Implement services and endpoints to generate report data | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build a reports dashboard with filters (e.g., by date range, advocate) | ⏳ TODO | - |
+| | Create data visualization components (charts, graphs, tables) | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Connect the UI to the reporting endpoints | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Restrict access to specific reports based on user role | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests to validate the accuracy of report data | ⏳ TODO | - |
+
+---
+
+### 21. 🌐 **Multi-Language Support**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Plan internationalization (i18n) strategy (e.g., `react-i18next`, `nestjs-i18n`) | ⏳ TODO | - |
+| | Identify all user-facing strings for translation | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Integrate i18n library for backend-generated messages (e.g., error messages) | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Integrate i18n library and wrap the application | ⏳ TODO | - |
+| | Create translation files (e.g., `en.json`, `es.json`) | ⏳ TODO | - |
+| | Build a language switcher component | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Replace all hardcoded UI strings with translation keys | ⏳ TODO | - |
+| | Store user language preference in their profile or local storage | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | N/A | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Write tests to verify that language switching works correctly across the app | ⏳ TODO | - |
+
+---
+
+### 22. 📊 **Dynamic Dashboard**
+**Module Status:** ⏳ TODO
+
+| 🧱 Phase | ✅ Task | 📌 Status | 📝 Notes / Errors |
+| :--- | :--- | :---: | :--- |
+| **Phase 1: Scoping & Data Modeling** | Define data points and widgets for each user role (Admin, Manager, Advocate, Staff) | ⏳ TODO | - |
+| | Design API endpoints to supply dashboard data | ⏳ TODO | - |
+| **Phase 2: Backend (NestJS) – CRUD & Logic** | Create a dashboard service to aggregate data (e.g., case counts, upcoming hearings) | ⏳ TODO | - |
+| | Implement role-specific data retrieval logic | ⏳ TODO | - |
+| **Phase 3: Frontend (React) – UI Development** | Build dashboard layout component | ⏳ TODO | - |
+| | Create reusable chart and summary card components | ⏳ TODO | - |
+| | Design role-specific dashboard views | ⏳ TODO | - |
+| **Phase 4: Integration & Validation** | Fetch and display dynamic data from the dashboard API | ⏳ TODO | - |
+| | Implement loading skeletons and error states for widgets | ⏳ TODO | - |
+| **Phase 5: Role-Based Access Control (RBAC)** | Ensure the dashboard API returns data appropriate for the user's role | ⏳ TODO | - |
+| | Conditionally render dashboard widgets based on user permissions | ⏳ TODO | - |
+| **Phase 6: Testing & Finalization** | Test dashboard data aggregation logic | ⏳ TODO | - |
+| | Test UI components with mock data | ⏳ TODO | - |
+
