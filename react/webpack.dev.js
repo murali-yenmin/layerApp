@@ -8,7 +8,7 @@ module.exports = merge(common, {
   devServer: {
     static: "./dist",
     hot: true,
-    port: process.env.PORT || 8080,
+    port: process.env.PORT || 8085,
     historyApiFallback: true,
   },
   plugins: [

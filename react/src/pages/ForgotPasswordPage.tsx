@@ -24,6 +24,7 @@ const ForgotPasswordPage: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors } = {},
+    control,
   } = useForm({
     resolver: yupResolver(forgotPasswordSchema),
   });
@@ -60,7 +61,7 @@ const ForgotPasswordPage: React.FC = () => {
             label="Email"
             name="email"
             type="email"
-            register={register}
+            control={control}
             error={errors?.email?.message}
           />
           <Button type="submit" className="w-full mt-4" disabled={isLoading}>

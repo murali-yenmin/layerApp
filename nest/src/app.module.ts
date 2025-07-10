@@ -8,6 +8,8 @@ import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { ProfileModule } from './profile/profile.module';
+import { RoleModule } from './role/role.module';
+import { StaffModule } from './staff/staff.module';
 
 @Module({
   imports: [
@@ -22,6 +24,8 @@ import { ProfileModule } from './profile/profile.module';
     UserModule,
     AuthModule,
     ProfileModule,
+    RoleModule,
+    StaffModule,
   ],
   controllers: [AppController],
   providers: [AppService],

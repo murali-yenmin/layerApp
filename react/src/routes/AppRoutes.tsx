@@ -11,6 +11,9 @@ import HomePage from "../pages/HomePage";
 import Layout from "../components/Layout";
 import ForgotPasswordPage from "../pages/ForgotPasswordPage";
 import ResetPasswordPage from "../pages/ResetPasswordPage";
+import StaffListPage from "../pages/staff/StaffListPage";
+import CreateStaffPage from "../pages/staff/CreateStaffPage";
+import EditStaffPage from "../pages/staff/EditStaffPage";
 
 const PrivateRoute: React.FC<{ children: any }> = ({ children }) => {
   const isAuthenticated = useSelector(
@@ -60,6 +63,36 @@ const AppRoutes: React.FC = () => {
           <PrivateRoute>
             <Layout>
               <ProfileEditPage />
+            </Layout>
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/staff"
+        element={
+          <PrivateRoute>
+            <Layout>
+              <StaffListPage />
+            </Layout>
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/staff/create"
+        element={
+          <PrivateRoute>
+            <Layout>
+              <CreateStaffPage />
+            </Layout>
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/staff/edit/:id"
+        element={
+          <PrivateRoute>
+            <Layout>
+              <EditStaffPage />
             </Layout>
           </PrivateRoute>
         }

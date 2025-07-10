@@ -27,6 +27,7 @@ const LoginPage: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors } = {},
+    control,
   } = useForm({
     resolver: yupResolver(loginSchema),
   });
@@ -62,14 +63,14 @@ const LoginPage: React.FC = () => {
             label="Email"
             name="email"
             type="email"
-            register={register}
+            control={control}
             error={errors?.email?.message}
           />
           <InputField
             label="Password"
             name="password"
             type="password"
-            register={register}
+            control={control}
             error={errors?.password?.message}
           />
           <div className="text-right mb-4">

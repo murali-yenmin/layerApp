@@ -32,6 +32,7 @@ const ResetPasswordPage: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors } = {},
+    control,
   } = useForm({
     resolver: yupResolver(resetPasswordSchema),
   });
@@ -77,14 +78,14 @@ const ResetPasswordPage: React.FC = () => {
             label="New Password"
             name="password"
             type="password"
-            register={register}
+            control={control}
             error={errors?.password?.message}
           />
           <InputField
             label="Confirm New Password"
             name="confirmPassword"
             type="password"
-            register={register}
+            control={control}
             error={errors?.confirmPassword?.message}
           />
           <Button type="submit" className="w-full mt-4" disabled={isLoading}>

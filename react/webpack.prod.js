@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
   devServer: {
-    port: process.env.PORT || 8080,
+    port: process.env.PORT || 8085,
   },
   plugins: [
     new Dotenv({

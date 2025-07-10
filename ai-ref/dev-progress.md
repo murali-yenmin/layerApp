@@ -5,10 +5,10 @@ This document tracks the real-time progress of the project, updated after each d
 ---
 ## 🚀 Current Development Status
 
--   **🔄 Current Task:** Implement Layout with Header and Sidebar
--   **📍 Current Phase:** Frontend Core Setup
--   **📈 Overall Progress:** 11.02% (13/118 tasks completed) - *Recalculation needed for accurate percentage*
--   **🕓 Last Updated:** 2025-07-09T12:00:00Z
+-   **🔄 Current Task:** Connect UI to backend endpoints
+-   **📍 Current Phase:** Staff Management - Integration.
+-   **📈 Overall Progress:** 25.42% (30/118 tasks completed)
+-   **🕓 Last Updated:** 2025-07-10T12:00:00Z
 
 ---
 
@@ -39,11 +39,16 @@ This table provides a granular view of every task across all models and phases, 
 | User, Auth, & Profiles   | Frontend    | UAP-F-03     | Implement auth state management                      | ✅ DONE    |
 | User, Auth, & Profiles   | Integration | UAP-I-01     | Connect UI to backend endpoints                      | ✅ DONE    |
 | User, Auth, & Profiles   | Integration | UAP-I-02     | Implement E2E tests for auth flows                   | ✅ DONE    |
-| Staff Management         | Backend     | SM-B-01      | Define Staff schema                                  | ⏳ TODO    |
-| Staff Management         | Backend     | SM-B-02      | Implement Staff CRUD endpoints                       | ⏳ TODO    |
-| Staff Management         | Frontend    | SM-F-01      | Create Staff list view                               | ⏳ TODO    |
-| Staff Management         | Frontend    | SM-F-02      | Create Add/Edit Staff forms                          | ⏳ TODO    |
-| Staff Management         | Integration | SM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
+| Role & Permission Management | Backend | RPM-B-01 | Create Role schema and update 'role' field in User schema to string | ✅ DONE |
+| Role & Permission Management | Backend | RPM-B-02 | Include 'role' in JWT payload and extract in JwtStrategy | ✅ DONE |
+| Role & Permission Management | Backend | RPM-B-03 | Create Roles decorator and RolesGuard for RBAC       | ✅ DONE |
+| Role & Permission Management | Backend | RPM-B-04 | Create RoleModule and RoleService for managing roles (CRUD) | ✅ DONE |
+| Role & Permission Management | Backend | RPM-B-05 | Apply RBAC to ProfileController methods | ✅ DONE |
+| Staff Management         | Backend     | SM-B-01      | Define Staff schema                                  | ✅ DONE    |
+| Staff Management         | Backend     | SM-B-02      | Implement Staff CRUD endpoints                       | ✅ DONE    |
+| Staff Management         | Frontend    | SM-F-01      | Create Staff list view                               | ✅ DONE    |
+| Staff Management         | Frontend    | SM-F-02      | Create Add/Edit Staff forms                          | ✅ DONE    |
+| Staff Management         | Integration | SM-I-01      | Connect UI to backend endpoints                      | ✅ DONE    |
 | Client Management        | Backend     | CM-B-01      | Define Client schema                                 | ⏳ TODO    |
 | Client Management        | Backend     | CM-B-02      | Implement Client CRUD endpoints                      | ⏳ TODO    |
 | Client Management        | Frontend    | CM-F-01      | Create Client list view                              | ⏳ TODO    |
@@ -53,7 +58,7 @@ This table provides a granular view of every task across all models and phases, 
 | Advocate Management      | Backend     | AM-B-02      | Implement Advocate CRUD endpoints                    | ⏳ TODO    |
 | Advocate Management      | Frontend    | AM-F-01      | Create Advocate list view                            | ⏳ TODO    |
 | Advocate Management      | Frontend    | AM-F-02      | Create Add/Edit Advocate forms                       | ⏳ TODO    |
-| Advocate Management      | Integration | AM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
+| Advocate Management       | Integration | AM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
 | Company Management       | Backend     | CoM-B-01     | Define Company schema                                | ⏳ TODO    |
 | Company Management       | Backend     | CoM-B-02     | Implement Company CRUD endpoints                     | ⏳ TODO    |
 | Company Management       | Frontend    | CoM-F-01     | Create Company list view                             | ⏳ TODO    |
@@ -61,9 +66,9 @@ This table provides a granular view of every task across all models and phases, 
 | Company Management       | Integration | CoM-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
 | Case & Matter Management | Backend     | CMM-B-01     | Define Case/Matter schema with relations             | ⏳ TODO    |
 | Case & Matter Management | Backend     | CMM-B-02     | Implement Case/Matter CRUD endpoints                 | ⏳ TODO    |
-| Case & Matter Management | Frontend    | CMM-F-01     | Create Case/Matter list view                         | ⏳ TODO    |
-| Case & Matter Management | Frontend    | CMM-F-02     | Create Add/Edit Case/Matter forms                    | ⏳ TODO    |
-| Case & Matter Management | Integration | CMM-I-01     | Connect UI to backend endpoints                      | ⏳ TODO    |
+| Case & Matter Management | Frontend    | CMM-F-01      | Create Case/Matter list view                         | ⏳ TODO    |
+| Case & Matter Management | Frontend    | CMM-F-02      | Create Add/Edit Case/Matter forms                    | ⏳ TODO    |
+| Case & Matter Management | Integration | CMM-I-01      | Connect UI to backend endpoints                      | ⏳ TODO    |
 | Hearing Management       | Backend     | HM-B-01      | Define Hearing schema with relations                 | ⏳ TODO    |
 | Hearing Management       | Backend     | HM-B-02      | Implement Hearing CRUD endpoints                     | ⏳ TODO    |
 | Hearing Management       | Frontend    | HM-F-01      | Create Hearing list/calendar view                    | ⏳ TODO    |
@@ -135,4 +140,3 @@ This section logs any encountered errors during development, providing context a
 
 | Model | Phase | Task | Error Description | Status |
 |-------|-------|------|-------------------|--------|
-| –     | –     | –    | No errors logged yet | ✅ No issues |

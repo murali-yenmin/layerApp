@@ -37,6 +37,7 @@ const ProfileEditPage: React.FC = () => {
     handleSubmit,
     formState: { errors },
     reset,
+    control,
   } = useForm<UserProfile>({
     // resolver: yupResolver(profileSchema),
     // defaultValues: profile,
@@ -98,42 +99,42 @@ const ProfileEditPage: React.FC = () => {
             label="Email"
             name="email"
             type="email"
-            register={register}
+            control={control}
             error={errors.email?.message}
           />
           <InputField
             label="Email"
             name="email"
             type="email"
-            register={register}
+            control={control}
             error={errors.email?.message}
           />
           <InputField
             label="First Name"
             name="firstName"
             type="text"
-            register={register}
+            control={control}
             error={errors.firstName?.message}
           />
           <InputField
             label="Last Name"
             name="lastName"
             type="text"
-            register={register}
+            control={control}
             error={errors.lastName?.message}
           />
           <InputField
             label="Address"
             name="address"
             type="text"
-            register={register}
+            control={control}
             error={errors.address?.message}
           />
           <InputField
             label="Phone"
             name="phone"
             type="text"
-            register={register}
+            control={control}
             error={errors.phone?.message}
           />
           <div className="flex items-baseline justify-between mt-4">

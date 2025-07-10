@@ -1,29 +1,35 @@
-import React from 'react';
-import { UseFormRegister } from 'react-hook-form';
+import React from "react";
+import { Control, Controller, FieldValues } from "react-hook-form";
 
 interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   name: string;
   error?: string;
-  register: UseFormRegister<any>;
+  control: any;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
   label,
   name,
   error,
-  className = '',
-  register,
+  className = "",
+  control,
   ...props
 }) => {
   return (
     <div className="relative mb-4">
-      <input
-        id={name}
-        {...register(name)}
-        className={`w-full pt-4 pb-1 px-3 border-b border-gray-300 bg-transparent text-base text-gray-800 outline-none focus:border-purple-600 peer ${className}`}
-        placeholder=" " // Required for the label animation
-        {...props}
+      <Controller
+        name={name}
+        control={control}
+        render={({ field }) => (
+          <input
+            id={name}
+            {...field}
+            className={`w-full pt-4 pb-1 px-3 border-b border-gray-300 bg-transparent text-base text-gray-800 outline-none focus:border-purple-600 peer ${className}`}
+            placeholder=" " // Required for the label animation
+            {...props}
+          />
+        )}
       />
       <label
         htmlFor={name}

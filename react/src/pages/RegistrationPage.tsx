@@ -34,6 +34,7 @@ const RegistrationPage: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors } = {},
+    control,
   } = useForm({
     resolver: yupResolver(registrationSchema),
   });
@@ -70,28 +71,28 @@ const RegistrationPage: React.FC = () => {
             label="Username"
             name="username"
             type="text"
-            register={register}
+            control={control}
             error={errors?.username?.message}
           />
           <InputField
             label="Email"
             name="email"
             type="email"
-            register={register}
+            control={control}
             error={errors?.email?.message}
           />
           <InputField
             label="Password"
             name="password"
             type="password"
-            register={register}
+            control={control}
             error={errors?.password?.message}
           />
           <InputField
             label="Confirm Password"
             name="confirmPassword"
             type="password"
-            register={register}
+            control={control}
             error={errors?.confirmPassword?.message}
           />
           <Button type="submit" className="w-full mt-4" disabled={isLoading}>

@@ -16,6 +16,9 @@ export class User {
   @Prop({ required: true })
   passwordHash: string;
 
+  @Prop({ required: true, default: 'Staff' })
+  role: string; // Storing role name as a string
+
   @Prop()
   passwordResetToken?: string;
 
