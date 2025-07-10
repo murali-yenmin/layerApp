@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "jsx": "react",
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,              // ✅ Helpful for React projects
+    "skipLibCheck": true                  // ✅ Avoid unnecessary type checks
+  },
+  "include": [
+    "src",
+    "types",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ]
 }

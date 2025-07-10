@@ -1,0 +1,22 @@
+{
+  "auth": {
+    "invalidCredentials": "Credenciales inválidas"
+  },
+  "database": {
+    "urlNotDefined": "DATABASE_URL no definida en .env",
+    "connected": "MongoDB conectado exitosamente",
+    "connectionFailed": "Fallo la conexión a MongoDB"
+  },
+  "user": {
+    "created": "Usuario creado exitosamente"
+  },
+  "validation": {
+    "emailNotEmpty": "El correo electrónico no debe estar vacío",
+    "emailInvalid": "El correo electrónico debe ser una dirección de correo válida",
+    "nameNotEmpty": "El nombre no debe estar vacío",
+    "nameInvalid": "El nombre debe ser una cadena de texto",
+    "passwordNotEmpty": "La contraseña no debe estar vacía",
+    "passwordInvalid": "La contraseña debe ser una cadena de texto",
+    "passwordMinLength": "La contraseña debe tener al menos 8 caracteres"
+  }
+}

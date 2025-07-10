@@ -1,0 +1,7 @@
+.login-container {
+  @apply min-h-screen flex items-center justify-center bg-neutral-light py-12 px-4 sm:px-6 lg:px-8;
+}
+
+.login-form-card {
+  @apply max-w-md w-full space-y-8 bg-white p-8 rounded-lg shadow-md;
+}

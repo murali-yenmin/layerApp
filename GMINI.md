@@ -566,3 +566,54 @@ Avoid bloated UI kits like Material UI unless approved.
 
 ---
 
+You are a professional UI/UX designer working for a modern SaaS company. Design a full user interface for a secure, AI-powered Advocate Office Management System called **LawDesk**.
+
+### 🎯 Goal:
+Create an enterprise-grade, minimal, corporate-style web application. The design must be intuitive, responsive, and suitable for legal professionals.
+
+### 🧩 Modules to Design:
+- ✅ Login, Signup, Forgot Password
+- ✅ Dashboard (role-based: Admin, Advocate, Staff)
+- ✅ Client Management (list, view, add/edit)
+- ✅ Case Management (status, notes, hearings, documents)
+- ✅ Invoices & Payments (PDF, print-friendly, status)
+- ✅ Document Manager (upload, preview, tag)
+- ✅ Office Calendar (hearings, tasks, leave)
+- ✅ Settings (profile, language, permissions)
+- ✅ Multilingual support switcher (top-right corner)
+- ✅ Notifications, Toasts, Loading skeletons
+- ✅ Responsive mobile version for all screens
+
+### 🎨 Design Style:
+- Corporate, clean, serious
+- Professional color palette (blues, grays, subtle accents)
+- Modern typography (Inter, Roboto)
+- Rounded corners (`border-radius: 12px`)
+- Card-based layout for content blocks
+- Left-hand vertical navigation bar
+- Dark mode switch (optional)
+
+### 🧠 UX Notes:
+- Prioritize clarity over decoration
+- Use icons for navigation (Lucide or Material)
+- Forms must be well-structured with validation states
+- Use modals or drawers for add/edit screens
+- Sticky headers and floating action buttons where helpful
+
+### 📱 Responsive Layouts:
+- Desktop, Tablet, and Mobile breakpoints
+- Use grid or flexbox for consistent structure
+
+### 📦 Components to Design:
+- Buttons (primary, secondary, ghost, loading)
+- Form elements (inputs, selects, checkboxes, toggles)
+- Tables with search, filters, pagination
+- Cards (case summary, client preview)
+- Modals, Alerts, Toasts
+- Tabs, Accordions
+- Sidebar and Header layout
+
+### 🎁 Output Format:
+- High-fidelity design in Figma or exportable images
+- Style guide with typography, spacing, color tokens
+

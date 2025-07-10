@@ -1,0 +1,22 @@
+{
+  "auth": {
+    "invalidCredentials": "Invalid credentials"
+  },
+  "database": {
+    "urlNotDefined": "DATABASE_URL not defined in .env",
+    "connected": "MongoDB connected successfully",
+    "connectionFailed": "MongoDB connection failed"
+  },
+  "user": {
+    "created": "User created successfully"
+  },
+  "validation": {
+    "emailNotEmpty": "Email should not be empty",
+    "emailInvalid": "Email must be a valid email address",
+    "nameNotEmpty": "Name should not be empty",
+    "nameInvalid": "Name must be a string",
+    "passwordNotEmpty": "Password should not be empty",
+    "passwordInvalid": "Password must be a string",
+    "passwordMinLength": "Password must be at least 8 characters long"
+  }
+}

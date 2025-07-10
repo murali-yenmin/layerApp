@@ -1,0 +1,50 @@
+{
+  "translation": {
+    "login": {
+      "signIn": "உங்கள் கணக்கில் உள்நுழைக",
+      "email": "மின்னஞ்சல்",
+      "password": "கடவுச்சொல்",
+      "button": "உள்நுழை",
+      "forgotPassword": "கடவுச்சொல்லை மறந்துவிட்டீர்களா?"
+    },
+    "register": {
+      "createAccount": "உங்கள் கணக்கை உருவாக்கவும்",
+      "name": "பெயர்",
+      "email": "மின்னஞ்சல்",
+      "password": "கடவுச்சொல்",
+      "confirmPassword": "கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+      "button": "பதிவு"
+    },
+    "forgotPassword": {
+      "title": "கடவுச்சொல்லை மறந்துவிட்டீர்களா?",
+      "email": "மின்னஞ்சல்",
+      "button": "சமர்ப்பி"
+    },
+    "dashboard": {
+      "welcome": "டாஷ்போர்டுக்கு வரவேற்கிறோம்!"
+    },
+    "unauthorized": {
+      "title": "அங்கீகரிக்கப்படாத அணுகல்",
+      "message": "இந்த பக்கத்தை பார்க்க உங்களுக்கு அனுமதி இல்லை."
+    },
+    "validation": {
+      "emailInvalid": "தவறான மின்னஞ்சல் வடிவம்",
+      "emailRequired": "மின்னஞ்சல் தேவை",
+      "passwordMinLength": "கடவுச்சொல் குறைந்தது 6 எழுத்துகள் நீளமாக இருக்க வேண்டும்",
+      "passwordRequired": "கடவுச்சொல் தேவை",
+      "nameRequired": "பெயர் தேவை",
+      "passwordsMatch": "கடவுச்சொற்கள் பொருந்த வேண்டும்",
+      "confirmPasswordRequired": "கடவுச்சொல்லை உறுதிப்படுத்தவும் தேவை"
+    },
+    "messages": {
+      "loginSuccess": "உள்நுழைவு வெற்றிகரமானது!",
+      "registrationSuccess": "பதிவு வெற்றிகரமானது!",
+      "unexpectedError": "எதிர்பாராத பிழை ஏற்பட்டது"
+    },
+    "languages": {
+      "english": "ஆங்கிலம்",
+      "spanish": "ஸ்பானிஷ்",
+      "tamil": "தமிழ்"
+    }
+  }
+}

@@ -25,9 +25,9 @@ Here is the breakdown of all 22 project modules, presented in the optimized deve
 
 ### 1. 🔐 **Secure Login**
 - **Phase 1: Scoping & Data Modeling**
-  - [ ] ⏳ Define User entity and authentication requirements
-  - [ ] ⏳ Design JWT structure and token refresh strategy
-  - [ ] ⏳ Outline password policies and hashing mechanism
+  - [x] ✅ Define User entity and authentication requirements
+  - [x] ✅ Design JWT structure and token refresh strategy
+  - [x] ✅ Outline password policies and hashing mechanism
 - **Phase 2: Backend (NestJS) - CRUD & Business Logic**
   - [ ] ⏳ Implement User entity and database schema
   - [ ] ⏳ Create authentication controller and service

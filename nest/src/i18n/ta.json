@@ -1,0 +1,22 @@
+{
+  "auth": {
+    "invalidCredentials": "தவறான சான்றுகள்"
+  },
+  "database": {
+    "urlNotDefined": ".env இல் DATABASE_URL வரையறுக்கப்படவில்லை",
+    "connected": "MongoDB வெற்றிகரமாக இணைக்கப்பட்டது",
+    "connectionFailed": "MongoDB இணைப்பு தோல்வியடைந்தது"
+  },
+  "user": {
+    "created": "பயனர் வெற்றிகரமாக உருவாக்கப்பட்டது"
+  },
+  "validation": {
+    "emailNotEmpty": "மின்னஞ்சல் காலியாக இருக்கக்கூடாது",
+    "emailInvalid": "மின்னஞ்சல் சரியான மின்னஞ்சல் முகவரியாக இருக்க வேண்டும்",
+    "nameNotEmpty": "பெயர் காலியாக இருக்கக்கூடாது",
+    "nameInvalid": "பெயர் ஒரு சரம் இருக்க வேண்டும்",
+    "passwordNotEmpty": "கடவுச்சொல் காலியாக இருக்கக்கூடாது",
+    "passwordInvalid": "கடவுச்சொல் ஒரு சரம் இருக்க வேண்டும்",
+    "passwordMinLength": "கடவுச்சொல் குறைந்தது 8 எழுத்துகள் நீளமாக இருக்க வேண்டும்"
+  }
+}

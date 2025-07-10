@@ -1,0 +1,50 @@
+{
+  "translation": {
+    "login": {
+      "signIn": "Inicia sesión en tu cuenta",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "button": "Iniciar sesión",
+      "forgotPassword": "¿Olvidaste tu contraseña?"
+    },
+    "register": {
+      "createAccount": "Crea tu cuenta",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "button": "Registrarse"
+    },
+    "forgotPassword": {
+      "title": "¿Olvidaste tu contraseña?",
+      "email": "Correo electrónico",
+      "button": "Enviar"
+    },
+    "dashboard": {
+      "welcome": "¡Bienvenido al Panel de Control!"
+    },
+    "unauthorized": {
+      "title": "Acceso no autorizado",
+      "message": "No tienes permiso para ver esta página."
+    },
+    "validation": {
+      "emailInvalid": "Formato de correo electrónico inválido",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "passwordMinLength": "La contraseña debe tener al menos 6 caracteres",
+      "passwordRequired": "La contraseña es obligatoria",
+      "nameRequired": "El nombre es obligatorio",
+      "passwordsMatch": "Las contraseñas deben coincidir",
+      "confirmPasswordRequired": "Confirmar contraseña es obligatorio"
+    },
+    "messages": {
+      "loginSuccess": "¡Inicio de sesión exitoso!",
+      "registrationSuccess": "¡Registro exitoso!",
+      "unexpectedError": "Ocurrió un error inesperado"
+    },
+    "languages": {
+      "english": "Inglés",
+      "spanish": "Español",
+      "tamil": "Tamil"
+    }
+  }
+}

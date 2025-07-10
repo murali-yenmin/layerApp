@@ -1,0 +1,50 @@
+{
+  "translation": {
+    "login": {
+      "signIn": "Sign in to your account",
+      "email": "Email",
+      "password": "Password",
+      "button": "Login",
+      "forgotPassword": "Forgot your password?"
+    },
+    "register": {
+      "createAccount": "Create your account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "button": "Register"
+    },
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "email": "Email",
+      "button": "Submit"
+    },
+    "dashboard": {
+      "welcome": "Welcome to the Dashboard!"
+    },
+    "unauthorized": {
+      "title": "Unauthorized Access",
+      "message": "You do not have permission to view this page."
+    },
+    "validation": {
+      "emailInvalid": "Invalid email format",
+      "emailRequired": "Email is required",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "passwordRequired": "Password is required",
+      "nameRequired": "Name is required",
+      "passwordsMatch": "Passwords must match",
+      "confirmPasswordRequired": "Confirm Password is required"
+    },
+    "messages": {
+      "loginSuccess": "Login successful!",
+      "registrationSuccess": "Registration successful!",
+      "unexpectedError": "An unexpected error occurred"
+    },
+    "languages": {
+      "english": "English",
+      "spanish": "Español",
+      "tamil": "தமிழ்"
+    }
+  }
+}
