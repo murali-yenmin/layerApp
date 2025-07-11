@@ -1,14 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useFormState } from "../../hooks/auth/useFormState";
-import Input from "../common/Input";
-import Button from "../common/Button";
-import styles from "../../styles/auth/Login.module.scss";
-
 interface RegisterFormProps {
   onSubmit: (data: RegisterFormInputs) => void;
 }
@@ -41,9 +37,9 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => {
   });
 
   const {
+    register,
     handleSubmit,
     formState: { errors },
-    control,
   } = useForm<RegisterFormInputs>({
     resolver: yupResolver(schema),
   });
@@ -61,82 +57,89 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleFormSubmit)}>
-      <h2 className="text-2xl font-bold text-center mb-6">
+    <>
+      <h2 className="text-center text-2xl font-semibold mb-6 text-gray-800">
         {t("register.createAccount")}
       </h2>
-      <Controller
-        name="name"
-        control={control}
-        render={({ field }) => (
-          <Input
-            {...field}
+      <form onSubmit={handleSubmit(handleFormSubmit)}>
+        <div className="mb-5">
+          <label htmlFor="name" className="block mb-2 font-medium text-gray-700">
+            {t("register.name")}
+          </label>
+          <input
+            {...register("name")}
             id="name"
-            label={t("register.name")}
             type="text"
-            error={errors.name?.message}
-            className="mb-4"
+            className="w-full p-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        )}
-      />
-      <Controller
-        name="email"
-        control={control}
-        render={({ field }) => (
-          <Input
-            {...field}
+          {errors.name && (
+            <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+          )}
+        </div>
+        <div className="mb-5">
+          <label htmlFor="email" className="block mb-2 font-medium text-gray-700">
+            {t("register.email")}
+          </label>
+          <input
+            {...register("email")}
             id="email"
-            label={t("register.email")}
             type="email"
-            error={errors.email?.message}
-            className="mb-4"
+            className="w-full p-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        )}
-      />
-      <Controller
-        name="password"
-        control={control}
-        render={({ field }) => (
-          <Input
-            {...field}
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+          )}
+        </div>
+        <div className="mb-5">
+          <label htmlFor="password" className="block mb-2 font-medium text-gray-700">
+            {t("register.password")}
+          </label>
+          <input
+            {...register("password")}
             id="password"
-            label={t("register.password")}
             type="password"
-            error={errors.password?.message}
-            className="mb-4"
+            className="w-full p-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        )}
-      />
-      <Controller
-        name="confirmPassword"
-        control={control}
-        render={({ field }) => (
-          <Input
-            {...field}
+          {errors.password && (
+            <p className="text-red-500 text-sm mt-1">
+              {errors.password.message}
+            </p>
+          )}
+        </div>
+        <div className="mb-5">
+          <label htmlFor="confirmPassword" className="block mb-2 font-medium text-gray-700">
+            {t("register.confirmPassword")}
+          </label>
+          <input
+            {...register("confirmPassword")}
             id="confirmPassword"
-            label={t("register.confirmPassword")}
             type="password"
-            error={errors.confirmPassword?.message}
-            className="mb-6"
+            className="w-full p-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        )}
-      />
-      {error && (
-        <p className="mt-2 text-sm text-red-600 text-center">{error}</p>
-      )}
-      <Button
-        type="submit"
-        isLoading={isLoading}
-        className="w-full bg-primary-DEFAULT hover:bg-primary-dark text-white font-bold py-2 px-4 rounded"
-      >
-        {t("register.button")}
-      </Button>
-      <div className="mt-4 text-center">
-        <Link to="/login" className="text-primary-DEFAULT hover:underline">
-          {t("login.signIn")}
-        </Link>
-      </div>
-    </form>
+          {errors.confirmPassword && (
+            <p className="text-red-500 text-sm mt-1">
+              {errors.confirmPassword.message}
+            </p>
+          )}
+        </div>
+        {error && <p className="text-red-600 text-center mb-4">{error}</p>}
+        <button
+          type="submit"
+          className="w-full p-3 bg-blue-600 text-white rounded-md text-base font-semibold cursor-pointer transition duration-300 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={isLoading}
+        >
+          {isLoading ? t("register.loading") : t("register.button")}
+        </button>
+        <div className="text-center mt-5">
+          <p>
+            {t("register.alreadyAccount")}{" "}
+            <Link to="/login" className="text-blue-600 font-semibold hover:underline">
+              {t("login.signIn")}
+            </Link>
+          </p>
+        </div>
+      </form>
+    </>
   );
 };
 

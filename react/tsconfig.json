@@ -9,14 +9,15 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,              // ✅ Helpful for React projects
-    "skipLibCheck": true                  // ✅ Avoid unnecessary type checks
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
   "include": [
     "src",
     "types",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/custom.d.ts"
   ]
 }

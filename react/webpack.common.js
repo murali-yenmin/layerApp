@@ -7,6 +7,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/", // ✅ Required for routing to work properly on refresh
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -20,14 +21,15 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: "ts-loader",
+        use: ["babel-loader", "ts-loader"],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader", "postcss-loader"], // ✅ Added postcss-loader
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
-        test: /\.module\.(scss|sass)$/, // ✅ Handle SCSS modules
+        test: /\.module\.(scss|sass)$/,
+        type: "javascript/auto",
         use: [
           "style-loader",
           {
@@ -35,15 +37,18 @@ module.exports = {
             options: {
               modules: {
                 localIdentName: "[name]__[local]___[hash:base64:5]",
+                exportLocalsConvention: "camelCase",
               },
               importLoaders: 2,
+              esModule: true,
             },
           },
+          "postcss-loader",
           "sass-loader",
         ],
       },
       {
-        test: /\.(scss|sass)$/, // ✅ Handle global SCSS
+        test: /\.(scss|sass)$/,
         exclude: /\.module\.(scss|sass)$/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
@@ -55,4 +60,12 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    compress: true,
+    open: true,
+    historyApiFallback: true,
+  },
 };

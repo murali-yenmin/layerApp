@@ -17,12 +17,9 @@ const Login: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    console.log("Styles loaded: (Login.module.scss import removed)");
-  });
   return (
-    <div>
-      <div>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md p-10 bg-white rounded-lg shadow-md">
         <LoginForm onSubmit={handleSubmit} />
       </div>
     </div>

@@ -617,3 +617,70 @@ Create an enterprise-grade, minimal, corporate-style web application. The design
 - High-fidelity design in Figma or exportable images
 - Style guide with typography, spacing, color tokens
 
+## 🎨 Tailwind CSS Configuration for UI/UX
+
+To ensure pixel-perfect design implementation, we follow a centralized Tailwind theme across all frontend features.
+
+### 📁 `tailwind.config.js` Setup
+
+```ts
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./features/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#1E3A8A",
+          light: "#3B82F6",
+          dark: "#1E40AF",
+        },
+        secondary: {
+          DEFAULT: "#64748B",
+          light: "#94A3B8",
+          dark: "#334155",
+        },
+        accent: {
+          green: "#22C55E",
+          red: "#EF4444",
+          yellow: "#EAB308",
+        },
+        background: {
+          DEFAULT: "#F8FAFC",
+          dark: "#0F172A",
+        },
+        border: "#E5E7EB",
+      },
+      fontFamily: {
+        sans: ["Inter", "Roboto", "ui-sans-serif", "system-ui"],
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+      },
+      borderRadius: {
+        DEFAULT: "12px",
+        xl: "16px",
+        full: "9999px",
+      },
+      boxShadow: {
+        card: "0 2px 12px rgba(0, 0, 0, 0.04)",
+        elevated: "0 4px 20px rgba(0, 0, 0, 0.08)",
+      },
+    },
+  },
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("tailwind-scrollbar"),
+  ],
+};

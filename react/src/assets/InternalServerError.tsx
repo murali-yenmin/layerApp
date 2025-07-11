@@ -10,7 +10,7 @@ const InternalServerError: React.FC = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="feather feather-server"
+      className="w-16 h-16 text-red-500 mx-auto"
     >
       <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
       <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>

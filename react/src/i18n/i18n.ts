@@ -6,18 +6,22 @@ import enTranslation from './locales/en.json';
 import esTranslation from './locales/es.json';
 import taTranslation from './locales/ta.json';
 
+const en = enTranslation;
+const es = esTranslation;
+const ta = taTranslation;
+
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources: {
       en: {
-        translation: enTranslation,
+        translation: en,
       },
       es: {
-        translation: esTranslation,
+        translation: es,
       },
       ta: {
-        translation: taTranslation,
+        translation: ta,
       },
     },
     lng: 'en', // default language

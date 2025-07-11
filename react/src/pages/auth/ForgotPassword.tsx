@@ -5,8 +5,6 @@ import ForgotPasswordForm, {
 } from "../../components/auth/ForgotPasswordForm";
 import { toast } from "react-toastify";
 import { forgotPasswordApi } from "../../helpers/backend_helper";
-import styles from "../../styles/auth/Login.module.scss";
-
 const ForgotPassword: React.FC = () => {
   const { t } = useTranslation();
   const handleSubmit = async (data: ForgotPasswordFormInputs) => {
@@ -24,8 +22,8 @@ const ForgotPassword: React.FC = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md p-10 bg-white rounded-lg shadow-md">
         <ForgotPasswordForm onSubmit={handleSubmit} />
       </div>
     </div>

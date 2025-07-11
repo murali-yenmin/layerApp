@@ -10,7 +10,7 @@ const PageNotFound: React.FC = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="feather feather-frown"
+      className="w-16 h-16 text-yellow-500 mx-auto"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>

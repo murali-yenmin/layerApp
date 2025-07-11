@@ -6,8 +6,6 @@ import RegisterForm, {
 import { toast } from "react-toastify";
 import { registerUser } from "../../store/auth/asyncThunks/authAsyncThunks";
 import { useAuth } from "../../hooks/react-hooks";
-import styles from "../../styles/auth/Login.module.scss";
-
 const Register: React.FC = () => {
   const { dispatch } = useAuth();
   const { t } = useTranslation();
@@ -22,8 +20,8 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md p-10 bg-white rounded-lg shadow-md">
         <RegisterForm onSubmit={handleSubmit} />
       </div>
     </div>
